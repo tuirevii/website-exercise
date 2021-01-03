@@ -1,0 +1,246 @@
+/* LOMAKETYYLIT */
+
+/* Yleiset tyylit */
+
+main {
+  margin-bottom: 90px;
+}
+
+.alue {
+  background-color: #efefef;
+  padding: 30px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+
+.nappi {
+  background-color: #593bb2;
+  color: white;
+  border: 0px;
+  /*width: 10%;*/
+}
+
+.nappi:hover {
+  background-color: #a45e5c;
+  transition: 0.2s ease;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Joka toinen rivi eri harmaa */
+tr:nth-of-type(odd) {
+  background: #efefef;
+}
+
+th {
+  background: #593bb2;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  padding: 6px!important;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  form {
+    padding: 0px 15px;
+  }
+}
+
+.tilaajatiedot input, .viestikentta textarea {
+  width: 100%;
+  margin: 5px 0px 10px 0px;
+}
+
+.viestikentta textarea {
+  height: 100px;
+}
+
+input {
+  width: 100%;
+}
+
+#maara1, #maara2, #maara3 {
+  width: 77%;
+}
+
+@media (max-width: 1199px) {
+  #maara1, #maara2, #maara3 {
+    width: 72%;
+  }
+}
+
+.nappi {
+    width: 30px;
+    height: 23px;
+    max-height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+
+	/* "Puretaan" taulukko */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Piilotetaan table headerit niin, että voidaan kuitenkin käyttää niitä */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	tr { border: 1px solid #ccc; }
+
+	td {
+		/* Käyttäytyy rivimäisesti */
+		border: none;
+		border-bottom: 1px solid #eee;
+		position: relative;
+		padding-left: 50%;
+	}
+
+	td:before {
+		/* Käyttäytyy table headerin tapaisesti */
+		position: absolute;
+		top: 8px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+
+	/* "OTSIKOT" SISÄLTÖJEN ETEEN PSEUDOELEMENTTIEN AVULLA */
+
+  /* Tuotteet */
+  .tuote td:nth-of-type(1):before {
+    content: "Tuotenumero";
+    font-weight: 500;
+  }
+
+	.tuote td:nth-of-type(2):before {
+    content: "Nimi";
+    font-weight: 500;
+  }
+
+	.tuote td:nth-of-type(3):before {
+    content: "Määrä";
+    font-weight: 500;
+  }
+
+	.tuote td:nth-of-type(4):before {
+    content: "Yksikköhinta";
+    font-weight: 500;
+  }
+
+	.tuote td:nth-of-type(5):before {
+    content: "Yhteensä";
+    font-weight: 500;
+  }
+
+  /* Yhteissumma */
+  .summayht tr {
+    margin-top: 15px;
+  }
+
+  .summayht td:first-child {
+    display: none;
+  }
+
+  .summayht td:last-child {
+    background-color: grey;
+    color: white;
+    margin-top: 5px;
+  }
+
+  .summayht td:last-child:before {
+    content: "Yhteensä (€)";
+  }
+
+  /* Tilaajatiedot */
+  .tilaajatiedot td:nth-of-type(1):before {
+    content: "Nimi";
+    font-weight: 500;
+  }
+
+  .tilaajatiedot td:nth-of-type(2):before {
+    content: "Yhteystiedot";
+    font-weight: 500;
+  }
+
+  /* Lisätiedot */
+  .viestikentta td:nth-of-type(1):before {
+    content: "Viesti";
+    font-weight: 500;
+  }
+
+  #viesti textarea {
+    width: 100%!important;
+  }
+
+
+
+  .tasaus {
+    padding-left: 150px!important;
+  }
+
+  @media (max-width: 385px) {
+    .tasaus {
+      padding-left: 130px!important;
+    }
+  }
+
+
+  /* Nappien leveydet */
+
+  @media (max-width: 992px) {
+    .nappi {
+      width: 10%;
+    }
+  }
+
+  @media (max-width: 429px) {
+    .nappi {
+      width: 15%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .nappi {
+      width: 100%;
+    }
+  }
+
+  /* Määrä-kenttien leveydet */
+
+  @media (max-width: 992px) {
+    #maara1, #maara2, #maara3 {
+      width: 78%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    #maara1, #maara2, #maara3 {
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 489px) {
+    #maara1, #maara2, #maara3 {
+      width: 74%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    #maara1, #maara2, #maara3 {
+      width: 100%;
+    }
+  }
+}

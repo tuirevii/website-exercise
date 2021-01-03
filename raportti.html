@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fi" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Harjoitustyön raportti | Tuire Viita-aho</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i" rel="stylesheet">
+
+    <!-- Own styles -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/raportti.css">
+
+</head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Tuire Viita-aho</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Etusivu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="raportti.html">Raportti<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="lomake.html">Lomake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="otayhteytta.html">Ota yhteyttä</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Main image -->
+      <div class="yla">
+        <img class="ylakuva" src="img/kahvi.jpg" alt="kahvikuppi">
+        <div class="centered">
+          <div class="ylatekstit alasivu">
+            <h1>Oops, I did it!</h1>
+            <h2>Harjoitustyön raporttiosuus</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two columns -->
+      <div class="container alue1">
+        <div class="row">
+          <div class="col-md-6 eka">
+            <h2>Mitä tein?</h2>
+            <p>Tein tämän harjoitustyön oppimisen vuoksi yksin ja siitäkin huolimatta, että olisin voinut kirjoittaa pelkän 
+              raportin jo aiemmin tekemästäni. On kuitenkin hiukan eri asia tehdä kotisivut ihan alusta alkaen ilman 
+              julkaisujärjestelmää tai aloituspohjaa. Lisäksi käytän työssäni Lessiä enkä puhdasta CSS:ää, 
+              joten siitäkin syystä tämä oli opettavaista.
+            </p>
+          </div>
+          <div class="col-md-6 toka">
+            <h2>Pari muokkaamaani sivustoa</h2>
+            <p>Olen muokannut mm. alla olevia Concrete5-julkaisujärjestelmällä tehtyjä sivustoja työkaverini tekemästä 
+              <a href="http://dev.davia.fi/tuirenpohja/" target="_blank">sivustopohjasta</a> eteenpäin. 
+              Koodin osalta olen koskenut CSS-tiedostoihin (tarkemmin sanottuna Less-tiedostoihin) ja jonkin verran myös 
+              PHP-tiedostoihin. Myös responsiivisuuden testaaminen ja tarvittavien muutosten tekeminen responsiivisuuden 
+              varmistamiseksi on ollut minun osuuttani. Monet asiat olen tehnyt suoraan Concrete5:ssä.</p>
+            <ul>
+              <li><a href="https://www.korkkitrio.fi/" target="_blank">korkkitrio.fi</a></li>
+              <li><a href="https://www.gli.fi/" target="_blank">gli.fi</a> (Ei koulutuskalentereita)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parallax -->
+      <div id="taustakuva1">
+        <div class="d-flex justify-content-center nostoteksti">
+          <h3>Komea parallax, eikö?</h3><br>
+        </div>
+      </div>
+
+      <!-- Numbering -->
+      <div class="harmaa">
+        <div class="container pallot">
+          <h2>Kolmansien osapuolien kirjastot ja muut aineistot</h2>
+          <p>Tässä on pseudoelementtien avulla listattuna ne kolmansien osapuolten kirjastot ja muut materiaalit, joita olen sivustolla hyödyntänyt. Pallot ja niiden sisällä olevat luvut päivittyvät automaattisesti, jos sisältöä lisätään tai poistetaan. Tähän olen hyödyntänyt CSS:n countersia.</p>
+          <div class="row" id="counters">
+            <div class="yksi">
+              <h3 class="section">Bootstrap 4</h3>
+              <p>Sivuston tyylittelyyn ja joihinkin toiminnallisuuksiin on hyödynnetty uusinta Bootstrapia eli <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4:ää. </a>Bootstrapin mukana tulee sen tarvitsema määrä jQuerya ja Popper.js:ää.</p>
+            </div>
+            <div class="kaksi">
+              <h3 class="section">Google Fonts</h3>
+              <p>Sivustolla käytetyt fontit ovat <a href="https://fonts.google.com/" target="_blank">Google Fontseista. </a>Otsikoissa on käytössä "Kanit" ja leipätekstissä "Source Sans Pro".</p>
+            </div>
+            <div class="kolme">
+              <h3 class="section">Font Awesome</h3>
+              <p>Sivustolla olevat ikonit on saatu <a href="https://fontawesome.com/" target="_blank">Font Awesomesta. </a>Niitä on hiukan tyylitelty CSS:llä.</p>
+            </div>
+            <div class="nelja">
+              <h3 class="section">Unsplash</h3>
+              <p>Kaikki sivustolla olevat kuvat ovat peräisin <a href="https://unsplash.com/" target="_blank">Unsplashista.</a></p>
+            </div>
+            <div class="viisi">
+              <h3 class="section">Google Maps</h3>
+              <p>Sivuston <a href="otayhteytta.html">Ota yhteyttä -sivulla</a> on iframe-upotuksena <a href="https://www.google.com/maps" target="_blank">Google Mapsista</a> saatu kartta. Kartan kohteena on HAMKin Visamäen toimipiste.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Ota yhteyttä</h4>
+            <p>Tuire Viita-aho<br>
+            <a href="tel:+358404871441">040 487 1441</a><br>
+            <a href="mailto:tuirevii@gmail.com">tuirevii@gmail.com</a><br>
+            <a href="https://linkedin.com/in/tuirevii" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright -->
+    <footer id="copyright">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-12">
+                <div class="col-sm-12">
+                  <p><span class="pull-right">&copy; Tuire Viita-aho 2018</span></p>
+                </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!--Own scripts -->
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>

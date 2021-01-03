@@ -1,0 +1,76 @@
+/* --- RAPORTTISIVUN CSS --- */
+
+/*Background*/
+.harmaa {
+  background: #ededed;
+  padding: 60px 30px 90px 30px;
+}
+
+@media (max-width: 576px) {
+  .harmaa {
+    padding: 60px 15px 90px 15px;
+  }
+}
+
+/*Numbering*/
+#counters {
+  text-align: left;
+  padding: 0em 1em;
+  counter-reset: luku;
+  margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+  #counters {
+    padding: 0em 7em;
+  }
+}
+
+@media (max-width: 768px) {
+  .counters {
+      padding: 0em 1.5em;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+.section::before {
+  counter-increment: luku;
+  content: counter(luku) '  '; /*Blank space*/
+  position: absolute;
+  left: -3em;
+  top: -.3em;
+  background: #593bb2;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #593bb2;
+  box-sizing: border-box;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .section::before {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 2px solid #593bb2;
+    margin: 30px 0px 15px 0px;
+  }
+}
+
+#taustakuva1 {
+  background-image: url(../img/puut.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+}

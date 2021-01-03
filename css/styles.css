@@ -1,0 +1,405 @@
+body, html {
+  height: 100%;
+  font-family: 'Kanit', sans-sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: white;
+}
+
+body {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 2.3rem;
+  }
+}
+
+/* Fonts */
+
+h1, h2, h3, h4, h5 {
+  color: #593bb2;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+p, li {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.35;
+}
+
+a, a:hover {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #593bb2;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #181032;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Navigation */
+
+.navbar {
+  background-color: none!important;
+}
+
+#mainNavbar {
+  padding: 0px 15px;
+  transition: 1s;
+}
+
+#mainNavbar a {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    background: #593bb2;
+    color: white;
+  }
+}
+
+#mainNavbar .nav-link {
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 15px;
+}
+
+@media (max-width: 991.99px) {
+  #mainNavbar .nav-link {
+    text-transform: none;
+    padding: 7px 15px 10px 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  #navLinkit {
+    display: none;
+    text-align: left;
+  }
+}
+
+#mainNavbar .active, #mainNavbar .nav-link:hover {
+  background-color: white;
+  color: #593bb2!important;
+  transition: 0.5s;
+}
+
+#mainNavbar .navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.2em;
+}
+
+@media (max-width: 767px) {
+  #mainNavbar .navbar-brand {
+    font-size: 1.2rem;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  #mainNavbar .navbar-brand {
+    padding-left: 15px;
+  }
+}
+
+.navbar.scrolled {
+  background: #593bb2;
+  border-bottom: 1px solid white;
+  padding: 0;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+
+
+/* --- Main image --- */
+
+.ylakuva {
+  width: 100%;
+  height: auto;
+}
+
+.yla {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Texts */
+
+.ylatekstit h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: white;
+  margin: 0px 0px 5px 0px;
+  text-shadow:
+    0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 400px) {
+  .ylatekstit h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 460px) {
+  .ylatekstit h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ylatekstit h1 {
+    font-size: 3rem;
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ylatekstit h1 {
+    font-size: 3.2rem;
+  }
+}
+
+.ylatekstit h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0px 0px 30px 0px;
+  text-shadow:
+    0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 400px) {
+  .ylatekstit h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .ylatekstit h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.centered {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .centered {
+    top: 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .centered {
+    top: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .centered {
+    top: 48%;
+  }
+}
+
+@media (max-width: 575px) {
+  .alasivu h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .alasivu h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .alasivu h2 {
+    font-size: 1.7em;
+  }
+}
+
+.eka {
+  padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .eka {
+      padding-left: 30px;
+  }
+}
+
+.toka {
+  padding-left: 30px;
+}
+
+/* --- CTA / buttons --- */
+
+.cta {
+  background-color: #593bb2;
+  border: 1px solid #593bb2;
+  font-size: 1rem;
+  color: white;
+  padding: 10px 60px;
+  margin-top: 15px;
+  width: 200px;
+}
+
+.cta:hover {
+  background-color: #a45e5c;
+  border: 1px solid #a45e5c;
+  color: white;
+  transition: 0.2s;
+}
+
+@media (max-width: 575px) {
+  .piilotettu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .cta {
+    font-size: 1rem;
+  }
+}
+
+/* Icons */
+
+/* External links */
+a[target="_blank"]::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f35d';
+  font-weight: 900;
+  font-size: .8em;
+  margin: 0px 5px 0px 2px;
+}
+
+footer a:after {
+  content: none!important;
+  margin: 0px 15px;
+}
+
+.card-body {
+  border: 1px solid #ededed;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.12),
+    0 1px 2px rgba(0,0,0,0.24);
+}
+
+.respo {
+  width: 768px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nostoteksti h3 {
+    color: white!important;
+    position: relative;
+    padding-top: 10rem;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 9rem 1.5rem;
+    text-shadow:
+      0px 4px 3px rgba(0, 0, 0, 0.4),
+      0px 8px 13px rgba(0, 0, 0, 0.1),
+      0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.alue1, .alue2 {
+  min-height: 200px;
+  padding: 60px 15px;
+}
+
+@media (max-width: 768px) {
+  .alue1 {
+    padding: 60px 15px 60px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .alue1 {
+    padding: 60px 15px 60px 15px;
+  }
+}
+
+/* --- Footer --- */
+
+footer {
+  background: #181032;
+  height: auto;
+  padding: 60px;
+  text-align: center;
+}
+
+footer a, footer p {
+  color: white;
+}
+
+footer a:hover, footer i:hover {
+  color: #593bb2;
+}
+
+footer i {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+
+#copyright {
+  background: #efefef;
+  width: 100%;
+  margin: 0;
+  padding: 15px 0px 15px 0px;
+}
+
+#copyright p {
+  padding: 0;
+  margin: 0;
+  float: right;
+  color: #333;
+}
+
+/* Mobile nav */
+
+@media (max-width: 991px) {
+  a {
+    margin: 1px 0px;
+  }
+}

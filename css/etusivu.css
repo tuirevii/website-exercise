@@ -1,0 +1,39 @@
+/* ETUSIVU */
+
+.centered {
+  top: 44%;
+}
+
+.alku {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.alku h2 {
+  font-size: 3em;
+}
+
+.nostoalue {
+  background-color: #efefef;
+  box-shadow: 0px 0px 10px rgba(188,188,188,0.43) inset;
+}
+
+/*Järjestyksen muuttaminen*/
+
+.jarjestys {
+  padding: 3rem;
+}
+
+.lead {
+  margin-top: 1em;
+  line-height: 1.2;
+  font-size: 1.2em;
+}
+
+.img-fluid {
+  min-height: 100%;
+  width: 768px;
+  margin: auto;
+  max-width: 100%;
+  min-width: 100%;
+}
