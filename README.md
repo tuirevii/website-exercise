@@ -3,7 +3,7 @@
 ## About
 I created this responsive website in 2018 for a school project while studying business information technology in the Häme university of applied sciences. The technologies I used were **HTML5, CSS, Bootstrap 4 and JavaScript**. Fonts were from Google Fonts and icons from Font Awesome. 
 
-The website consists of four pages and the content is in Finnish even though it could have been just lorem ipsum. The focus was in the technique UI, not in content including text and images.
+The website consists of four pages and the content is in Finnish even though it could have been just lorem ipsum. The focus was in the technique and UI, not in the content including text and images.
 Each page has an image on the top and a footer on the bottom. The navigation is fixed and gets a purple background on scroll and in mobile view.
 
 ### Main page (index.html)
