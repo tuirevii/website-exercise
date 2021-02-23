@@ -1,5 +1,7 @@
 # Website exercise
 
+Link to the live version of the website: https://tuireviita-aho.netlify.app
+
 ## About
 I created this responsive website in 2018 for a school project while studying business information technology in the Häme university of applied sciences. The technologies I used were **HTML5, CSS, Bootstrap 4 and JavaScript**. Fonts were from Google Fonts and icons from Font Awesome. 
 
